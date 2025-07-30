@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter - convert your currency</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">MyCurrencyConverter</div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+        <h1>Choose a currency to convert</h1>
+      <form  method="get">
+        <label for="quantity">Choose quantity:</label>
+        <input type="number" name="quantity" min="1">
+        <label for="fromcurrency">from:</label>
+        <select name="fromcurrency">
+          <option value="INR">Indian Rupee</option>
+          <option value="USD">US Dollars</option>
+          <option value="EUR">Euro</option>
+          <option value="AUD">Australian Dollar</option>
+          <option value="JPY">Japanese Yen</option>
+        </select>
+        <label for="tocurrency">to:</label>
+        <select name="tocurrency">
+          <option value="INR">Indian Rupee</option>
+          <option value="USD">US Dollars</option>
+          <option value="EUR">Euro</option>
+          <option value="AUD">Australian Dollar</option>
+          <option value="JPY">Japanese Yen</option>
+        </select>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="output">
+        <div class="wrong_input">
+          <h2>Enter a Non-zero Value</h2>
+        </div>
+        <div class="success">
+          <h2>
+          here is your converted value : 
+        </h2>
+        <table>
+    <thead>
+        <tr>
+            <th>Currency</th>
+            <th>Code</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+      </div>
+        </div>
+        
+    </div>
+    <footer>Copyright &copy; All rights reserved</footer>
+    <script src="app.js"></script>
+  </body>
+</html>

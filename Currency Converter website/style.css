@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    min-height: 100vh;
+    font-family: "Poppins";
+    max-width: 80vw;
+    margin: auto;
+}
+
+.container h1,h2{
+    margin: 23px 0;
+}
+
+footer{
+    text-align: center;
+    font-family: "Poppins";
+}
+
+nav{
+    font-family: "Noto Sans";
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    background-color:blueviolet;
+    padding: 23px 0 23px 0;
+}
+
+.logo{
+    margin: 0 23px 0 23px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+     list-style-type: none;
+     margin: 0 23px 0 0;
+     }
+nav ul{
+    display: flex;
+}
+
+nav li a{
+    text-decoration: none;
+    color: black;
+    transition: all;
+    transition-duration: 500ms;
+}
+
+nav li a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input[type='number'],select,label{
+  font-size: 25px;
+  margin-bottom: 23px;
+  width: 23vw;
+}
+
+.btn{
+    width: 144px;
+    padding:12px 23px;
+    background-color: rgb(106, 37, 172);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.output table{
+    width: 50vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 1rem;
+}
+
+.output table th,td{
+    width: 33.33%;
+}
+
+.output .wrong_input,.success{
+    display: none;
+}
